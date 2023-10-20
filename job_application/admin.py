@@ -5,6 +5,6 @@ from .models import Form
 
 class FormAdmin(admin.ModelAdmin):
     list_display = ("first_name", "last_name", "email")
-
+    
 
 admin.site.register(Form, FormAdmin)
