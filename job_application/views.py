@@ -24,3 +24,11 @@ def index(request):
             email_message = EmailMessage("form submission confirmation ", message_body, to=[email])
             email_message.send()
     return render(request, "index.html")
+
+
+def about(request):
+    return render(request, "about.html")
+
+
+def contact(request):
+    return render(request, "contact.html")
